@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/alecthomas/template"
+	"html/template"
 )
 
 // Template is used to serve HTTP templates
