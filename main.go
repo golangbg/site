@@ -121,7 +121,7 @@ func main() {
 		log.Fatal("SI_TOKEN is empty")
 	}
 
-	addr := os.Getenv("SI_PORT")
+	addr := os.Getenv("PORT")
 	if addr == "" {
 		addr = ":80"
 	}
