@@ -5,10 +5,10 @@ Simple website for golangbg.org using pure Go, HTML and CSS. Work in progress, w
 * Supports sending Slack invitations to register for the golangbg slack
 
 ## Todo
-- [] Integration with the Twitter account
-- [] Integration with the Facebook page
-- [] Support for English and Bulgarian
-- [] Simple admin interface to add pages in a simple way
+- [ ] Integration with the Twitter account
+- [ ] Integration with the Facebook page
+- [ ] Support for English and Bulgarian
+- [ ] Simple admin interface to add pages in a simple way
 
 ## Contributing
 Just fork it and sent let the pull requests come!
