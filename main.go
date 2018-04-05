@@ -132,5 +132,5 @@ func main() {
 	r.HandleFunc("/slack", SlackPostHandler).Methods(http.MethodPost)
 	r.HandleFunc("/", HomeHandler)
 
-	log.Fatal(http.ListenAndServe(addr, r))
+	log.Fatal(http.ListenAndServe(":"+addr, r))
 }
