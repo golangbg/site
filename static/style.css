@@ -1,0 +1,30 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+}
+
+.jumbotron {
+  min-height: 250px;
+}
+
+footer {
+  position: fixed;
+  background-color: grey;
+  text-align: center;
+  height: 25px;
+  bottom: 0;
+  width: 100%;
+  font-size: 72%;
+  padding-top: 5px;
+}
+
+main {
+  color: darkgreen;  
+}
+
+a,a:hover,a:visited {
+  color: darkred;
+}
+

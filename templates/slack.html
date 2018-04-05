@@ -1,0 +1,30 @@
+{{ define "content"}}
+<div class="row">
+    <div class="col-md-12">
+        <h1>Slack invitation</h1>
+        {{ if .Alert }}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Holy guacamole!</strong> {{ .Alert}}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        {{ end }}
+
+        {{ if not .Success}}
+            <p class="card-text">Please enter your email to receive your slack invitation.</p>
+            <form method="POST" action="/slack">
+                <div class="form-group">
+                    <label for="Email">Email address</label>
+                    <input type="email" class="form-control" id="Email" name="Email" aria-describedby="emailHelp" placeholder="Enter email" value="{{ .Email }}"
+                        required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <button type="submit" class="btn btn-success">Get invitation</button>
+            </form>
+        {{ else }}
+            <p class="card-text">All good! Please check your email for the invitation.</p>
+        {{ end }}    
+    </div>
+</div>
+{{ end }}

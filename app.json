@@ -1,0 +1,10 @@
+{
+    "name": "golangbg.org",
+    "description": "Website golangbg.org",
+    "keywords": [
+      "go bulgaria meetup",
+      "go"
+    ],
+    "website": "http://github.com/golangbg/site",
+    "repository": "http://github.com/heroku/site"
+  }
