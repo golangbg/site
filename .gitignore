@@ -14,4 +14,4 @@
 .glide/
 
 .env
-vendor/
+.docker_build/
