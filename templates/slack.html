@@ -18,13 +18,13 @@
                     <label for="Email">Email address</label>
                     <input type="email" class="form-control" id="Email" name="Email" aria-describedby="emailHelp" placeholder="Enter email" {{ if .Email }}value="{{ .Email }}"{{ end }}
                         required>
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <small id="emailHelp" class="form-text text-muted">We do not store your e-mail address and it will be used only for the creation of your GolangBG Slack account.</small>
                 </div>
                 <button type="submit" class="btn btn-success">Get invitation</button>
             </form>
         {{ else }}
             <p class="card-text">All good! Please check your email for the invitation.</p>
-        {{ end }}    
+        {{ end }}
     </div>
 </div>
 {{ end }}
